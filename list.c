@@ -186,11 +186,11 @@ bool serach(List head, char s[])//查找学生信息
 	while (p) {
 		if (!strcmp(p->item.id, s)) {
 			puts("The student whom you search has been found!");
-			printf("---------------------------------------------------------\n\t\
----------------------------------------------------------\n\
+			printf("-----------------------------------------------------------------------------------------------\n\t\
 			NAME:%s\t\t\tID:%s\nSCORE: Chinese:%d  Math:%d  English:%d  PE:%d\
-\t\tRANKING(总成绩排名):%d",
+\t\tRANKING(总成绩排名):%d\n",
 p->item.name, p->item.id, p->item.ch, p->item.math, p->item.en, p->item.pe, p->item.ranking);
+			printf("-----------------------------------------------------------------------------------------------\n");
 			return true;
 		}
 		p = p->next;
